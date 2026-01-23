@@ -120,7 +120,7 @@ impl<T: StableDeref> FrozenVec<T> {
     }
 }
 
-impl<T: StableDeref> FrozenVec<T> {
+impl<T> FrozenVec<T> {
     /// Converts the frozen vector into a plain vector.
     pub fn into_vec(self) -> Vec<T> {
         self.vec.into_inner()
